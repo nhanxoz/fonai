@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <link href="css/aos.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>FonAI - Draw Your Imagination</title>
+    <meta
+      name="description"
+      content="FonAI is a special artificial intelligence on the blockchain that helps humans create unique NFTs by a short description"
+    />
+    <meta property="og:title" content="FonAI - Draw Your Imagination" />
+    <meta
+      property="og:description"
+      content="FonAI is a special artificial intelligence on the blockchain that helps humans create unique NFTs by a short description"
+    />
+    <meta property="og:image" itemprop="image" content="public" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FonAI - Draw Your Imagination" />
+    <meta
+      name="twitter:description"
+      content="FonAI is a special artificial intelligence on the blockchain that helps humans create unique NFTs by a short description"
+    />
+    <meta name="twitter:site" content="@" />
+    <meta
+      name="twitter:image"
+      content="https://imagedelivery.net/R6EoT8PlEFwni6pQ-dSOqg/90955fd1-33e4-49a8-c826-4d4ba1fcbe00/public"
+    />
+    <!-- <script defer="defer" src="js/main.099d5c3a.js"></script> -->
+    <link href="css/main.0d28012d.css" rel="stylesheet" />
+  </head>
+  <body
+    class="is_dark"
+    data-aos-easing="ease"
+    data-aos-duration="2000"
+    data-aos-delay="0"
+  >
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <header id="header_main" class="header is-fixed">
+        <div class="container big">
+          <div class="row">
+            <div class="col-12">
+              <div class="header__body">
+                <div class="header__logo">
+                  <a
+                    ><img
+                      id="site-logo"
+                      src="images/logo.29032d7af23866f9612e.png"
+                      alt="cyfonii"
+                  /></a>
+                </div>
+                <div class="header__right">
+                  <nav id="main-nav" class="main-nav">
+                    <ul id="menu-primary-menu" class="menu">
+                      <li><a>Home</a></li>
+                      <li><a>How It Work?</a></li>
+                      <li><a>RoadMap</a></li>
+                      <li>
+                        <a
+                          href="https://fonai-app.gitbook.io/whitepaper/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Docs</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                          >Marketplace</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="mobile-button"><span></span></div>
+                </div>
+                <div class="header__action">
+                  <a
+                    href="https://generator.fonai.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-btn"
+                    ><span>Open App</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="home-1 wrapper">
+        <section class="banner">
+          <div class="shape right"></div>
+          <div class="container big">
+            <div class="row">
+              <div class="col-xl-6 col-md-12">
+                <div class="banner__left">
+                  <div class="block-text">
+                    <h2 class="heading">
+                      Connect FonAI <br />To Generate
+                      <span class="s1 arlo_tm_animation_text_word">NFTs</span>
+                      <br />Onchain
+                    </h2>
+                    <p class="desc">
+                      The artificial intelligence robot on blockchain generates
+                      digital NFTs from the user's description starting on
+                      Arbitrum
+                    </p>
+                    <p class="desc">
+                      Smart Contract:
+                      <b>0xCa848be669070A6a429a400EdF2Af8B95008951c</b>
+                    </p>
+                    <a
+                      href="https://generator.fonai.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="action-btn"
+                      ><span>Get Connected</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12">
+                <div class="banner__right">
+                  <div class="image">
+                    <img
+                      src="images/banner.87fb1c7e3b18927a2fd9.png"
+                      alt="cyfonii"
+                    />
+                  </div>
+                  <a
+                    class="price"
+                    href="https://twitter.com/FonAI_ARB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><div class="icon">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABHCAYAAAC6cjEhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFyWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuYjBmOGJlOSwgMjAyMS8xMi8wOC0xOToxMToyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjIgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMy0wMi0wOVQxODoxMToyNSswNzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjMtMDItMDlUMTg6MTU6NDQrMDc6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjMtMDItMDlUMTg6MTU6NDQrMDc6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIyOTNlYjRiLTc0YmMtYjI0OS1hMzI0LTg3N2E0NDAzYTIyNyIgeG1wTU06RG9jdW1lbnRJRD0i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"
+                        alt="cyfonii"
+                      />
+                    </div>
+                    <div class="content">
+                      <p>@FonAI_ARB</p>
+                      <h5>Twitter</h5>
+                    </div></a
+                  ><a
+                    class="owner"
+                    href="https://t.me/FonAI_ARB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><div class="image">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABHCAYAAAC6cjEhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFyWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuYjBmOGJlOSwgMjAyMS8xMi8wOC0xOToxMToyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjIgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMy0wMi0wOVQxODoxMToyNSswNzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjMtMDItMDlUMTg6MTg6MjUrMDc6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjMtMDItMDlUMTg6MTg6MjUrMDc6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmFlZTlhNTE4LTMzNzktM2E0NC04YzAxLTJiZDViNTIzNmExYiIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmI4OTllNWFjLTg4M2EtYmU0Zi04ODZhLTQzYWJkZmY5NWFhMiIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmMxOTQ4NjA5LWE1MzEtMDU0YS1hN2RlLTQyNWNiMjNhMTY2OSI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YzE5NDg2MDktYTUzMS0wNTRhLWE3ZGUtNDI1Y2IyM2ExNjY5IiBzdEV2dDp3aGVuPSIyMDIzLTAyLTA5VDE4OjExOjI1KzA3OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjMuMiAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmFlZTlhNTE4LTMzNzktM2E0NC04YzAxLTJiZDViNTIzNmExYiIgc3RFdnQ6d2hlbj0iMjAyMy0wMi0wOVQxODoxODoyNSswNzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjIgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmtr/7UAABL/SURBVHgBBcF38D/2Qdfxx+vz+ya/JLWTtHSELkPCaOkCZR1yItgCisrp4SiC45DzrOs89A/x1D/c3oniQOEUrXpURBRKRUCkiLWtWAsdpCOkdNGdUJrR/N5PH4+96u8EAAAAAAAAAEIB51CcKIqiw+HJ53iGfPjkped4UenksR2f1fEbyodPHigPndTx0Y4PnOOXytvPcW/phMM5nENRdDgHcQ4dig7nUHQoukEHcaKDE4ArAAAAAAAAAACAQoSAm3GbPAvfiqfiS/BMuX88PiyCIUAIfAo38Ag+jvtwD/4H3oT34EEAAAAAAAAAAAAAuAIAAAAAAAAAEABB4Lfi+fimeG65vVyGE3h8KJpkRQAA3AZG+Qw8F18u34C34UfwGrwdAAAAAAAAAAAA4OraNYoCCgAAAAAAAMB1vLB5+Y6vjrsKYUiFWSGkGAwRBkIqC2Aujut4Op6OrzJ/VV6Lf4HX4mMIAAAAAAAAAOBqYwMAiqIoAAAAIOD55dvM793x5MM6iKjMTBJFMLscnSyIoghmxg6FiIJM7HhcfB1eVP4DvlfeLAAAAAAAAADgAgAAG5cL165xdcXVFdeucblgAMSz8Ffx4/iTeIrZYBgbpiIWmUAcFgIGAB1CCAEDiBrQ8fTmFfh/8V3xZBBFEAAAAAAAFwAAAACAjcuFy4VdXBtfgn+I7yxPRQIgRAVmjMYWI2MDEIhIGA4FCFgEiArYoYg/hh8ovxvXQQQQAQQAAFwAAAAAAEDIE+UPxj/G74CFKBxOoGEzsSgrYkGUkAxMmyEJBgEhBpgMBSTk1vKV+JfxzWUgigAQQAGAywAAAAAAELfFd+KfmBcW6Ewx4xASZYUoBgNisAzgQFZAzAgoiEEEkwyaDbAhj5PvwT/HFYAQAgIAwAWGYRgGAAA8FX8Nfwa3BVQmQ9LGGKAiwEEhOYQzypBDKcQkATFpI4AQaLFDEGCE8YeXH8WzAABACAC4GAAAMAzDeCb+Mv48hB3GTMgshoFMtmEgIcWQJKQwwhYiBmKQCQgjmYBGiEqFOFyLr8E/xXOEAAAAgAsYhmEYAIDvKH8EllAXYBkIFIHRKEkYYGCGgdmyRgiAQoiMg0LEijMLBWBiAAzw0vLdcRuIIAAALhsDAIBhHtP8o/j9uKVoBgIFI8gcSgUEERlIggBSgW0qAiYQBgsAyQSFJESsFDkqSngZ/i1uC6AAAFyGjcu4jMvYGDfjFfLH44kAkqwIwUFEMQwcsGaDFDMQFLGN0sk2QYFkQoAIzWSLwQwMgDEzQybwDfKXIAAAwAUAAIbNl44/N24eALCmkUxqZmwGATUAyspC4RgMEMZGZWKQbUA4AZIACALEUqwYSRsj0fwJfKMQAAAXAwAAd+IVuN0EEoCsWTATUrQBsAgCRgMWhUgqQpkACEUQILBSFAZYACzQyWRFMaxux9+UzwUAgAsYhmHgT5WXFUUpRA0kwAHMFgXImiCCZgUYAjMWAgwIIIQxigBk4hCEIgYYNCB24lhx5/R3cR0A4AIAgM+PP4RbTBhmhgmxQF2IOsKkEHZsR8uiMEgFAgHBKAJAAwowkwDEsiICOJBGKADBHORl2dedwzlzzhQXAMAT8afxpAagQQhhdiaZwMwKMwEBmmRSwwzKCqwhig0ogghRIZnJ4I47+W2/ly//WjDksMBiiwViFlE2+RN4TNENzqfnagDAF8bvGyAGMAQQY2eSgRQrAKBZqZCFgAEUYOxwDgIWhZABXF3juS/QC77M7noBN93Mo5/mZ34EDEAsymAMNcMI+2p8HX4AjCsAXI9vlseDIywEAIRJGEAMTDJoCJlJtihhAEYHCKYyERoOw2c8jc//Ip7/xTzpMw0AHnmY4aTGySBAKMpK0zLAXiE/jIfhygB8nnw5FLEgoAixEBNQQJABLDoAFsUEDAcBChAA4ubr3Pl8nv+bee7ncbkGAABAAYvhQETLCqSG1IL85rWXxg/D1YArvDzuAGQmmQlDgAARAIkyVBYMEQ0FVgQBBSwONp5xJ3d9AZ/zEh73RAAAAABgiAWASCQZrMQEElf0e7QfNw9eBTwHXzmuQgwwaawAAGQmABuFAooAIgYHQyGEgMfdzt0vss99CU9+OgAAAAAAsBEAxBBimSHMVGPWKlNfq+6UX7gCPA+fBTAqQ2PRZh3A6BhaFlAzkIHhUGABxIlgXLvGc+7m876IZ38ON90MAADAe+4hPOsuAABuPAqSCRBgLA4KMw0VwHa7+kq85Urga/AZAcoACwcFQISVGR3KAIxCgMkxCBvFk57CXS/mrhfwhNsBAACABz/JT/wgv/i/+cZvAwAAPvx+inAglcmEwwRqVBrZEDeyr6m++2rA1x4GkZkQBQahkG0qO0AgEwVAkBmLW38Dz7iTu1/EHb+RyzUAAAAA3vpG/uu/49OP8M1/gWc8BwAAeO87ATQWA1icxVllwawAVe2aeiaeetU8Hs/c4QyQYgaSCQGoDHbAAgyiCHDtGk99Fne9mGfexfVbAQAAAIAPvY+f/EHe9Qt85h38vj/F458EAADAL98jTIAACDUYJSsEtM1Jdrf6wiv8JmgI2aaikAFsFBjCGh0kWRHgcU/kOc/jzi/giU8BAAAAAODGo7z+J3jtq3nkYZ79uXzjt3HrYwAAAHj003zgXgMkmkkFBgiAhREtbLoez7waXwIlDGKAYGgmQoTBELCma1fc8Vw++4X2jOdy7SYAAAAAAOC97+InXsUH7+PE576Y3/VHuXYFAAAA3P8xPvFRBCZEbHRAMMGoGYIGGbrrKp5XxAAKgUUDhKGIYiF6wpPt2c+zZ38+j30CAAAAAAAADz/Iz71Gb/jvdh4lvPgr+O3fxC4AAAAAfPRXufGoMBGGCjNkOmEJTKMAEHnRFe4YmZVgOKwYK0RRxMRjHssdd/NZd9uT72ADAAAAAAAA3voG/uer+cRHcRi+4nfypS8DAAAAAOA99yCDgGIZKIRNNdYiFatFE+UTV/IpmQkLYWiIIEaxz3wWv/ELePqd3HQzAAAAAAAAAB//ED/9n7j3rXRwbONlL+f5XwIAAAAAAPzKOwgBmUljMaFoscXadKOB4QzgmVd4rCGTMGQ4VkCj7EVfxV0vAQAAAAAAAADO4ef/B6//bzz8EKFx03Ve9nLufiEAAAAAAPDIw3zwPgGGCRmAAWYCFkzVagcaev6VedAhAGAdDQiLsDvuAgAAAAAAAAA+cB8/+595/32cQwdxy618/bfw7M8BAAAAAADgox/k/o9ZkGQhCAfCCIWVsGGsaQl76Eoe3xCxYJiVjFKs+Kl/q2c/z572XJ70VDYAAAAA4FO/xht+gre8Xo8+imwIT3wKv/Nbuf3pAAAAAAAAwHvfSQcRgoQF0ABkYSxgCmS2fPAKT0CALcUAK0oL9Mn7+YXX8uaf0eNvt6c+hzs+m9ufwbUrAADg7T/P617Drz/AOYYgPO3ZfP238NgnAAAAAAAAAHDfPYJlsVGZkGIhSEPVsmOVWRM18vAVHsAkMCvFAIaDmIDYxz/Mxz6kt7zObns8T3sOz7qbp3wWN9/C/R/lf/0Y974VB4AYPPOz+fpv5fotAAAAAAAAABQfeI81Gg6FSQZIJsoqzBGyJspGsKt4m3yBmVQ2BgcQG5owASCDT36cez6mX3oj1x9jT34GH/xlPvXrwsARJu56EV/9TVxdAQAAAAAAAAAPfYr7P4JAGAYSBkNjS0kNySwOyprDrVf4pNEBgw4BBSzIAACgGAI89EnuezsdxsKhAC/4Mn7LN7ALAAAAAAAAAAAf+QCfvF9CSJhkKJogaobGsiRqm5KafeQKD8jDuC6ESSYrxKIoySAyZBEWAhiFwFz4spfy4q8EAAAAAAAAAADgPe+gwILRoaxAiUZG2CQao+YwE6OPX+RdcRlMAQsRQmcABLGsbNMGEgKKAPCYx/LCrwAAAAAAAAAAAADe+07KApQEQA0bAJKSWqUwSQ3s/1zG63ETYBsRbJjFIIyFRgQdihBCMSwKcf0WAAAAAAAAAAAA4NzgffcyQmKZyRC0RVkIQRvBoI22Cv3sJX6t/GJDSGMDBrAwRaPFmISVYQOCEABuus7lAgAAAAAAAAAAwCc+wsc+qFBABAIQmhBtxIKhNYIAXnfBO8ZbhdGIRIfCZMLMsCg0DAQwQAEQrt8CAAAAAAAAAAAAvO9ePv1pGxsDDCLElmgEyTgjaIFIeDs+csEN/Jw8UsjKIrTkWAdRwBhgHWFSqSwABLj+GAAAip/+Ib3jzQAAAAAAALzvXqAoxEgsWwa1HRjSImiGiSYeNa82XQCvah6AaIQBBmaFCKFwwIoyrLGQEBS33AoAFD/6/bz+J+0H/xk/858RAAAAAAAfeq/ABCGGFaHDaHAGq2ZpKaHA7pfXi8s5lF/FzwUMAIMmYSAhEBgmCCLCygRcvw2AGzf40e/nrW+UMfzPH+Pf/QMe+BgAAAAANx7lg79iIDOEFAyDiIgASxphxURex97AXACWV+KRATMMkyxIZgEwA2SwEGUBNeDW24BHHuaH/wVv/3nGRBHe/Ta+72/w5p8DAAAAPvpBPvFhAJagEKKw1cysDYu2EGgGN+in6L3kAriB1403FgVIHSIACQUUpAFMJoBCwOOexMMP8kPfw71vA6IAAn7tE/yn7+PV/4ZHHgYAAN53Lzce1UEkoEGRQjZZLIo1jBBmuM/8F/OIcXViMO8pP2BegusdYqaxE2UwFAXESlgMQcAA3vSz/PQP8/EPAY6GAgAA3vBTvPdd+oY/ap95BwDwnnuEOcgaYjhNAUhWqTESo5lDBa/GOwEuEAp8D94nBxAmjaAUDCxERlR0TCyMEN5zD5/4MEGCGASAAeD9v2zf+9f5v68F4OEHeesbCRBEIcO2IlhGQ5YZZZoG3lb+PQBcAQAexCvMjwiAmNgoK8nAYexEAQCRGJNiMBzW5CAgAIgQHnqQH/oevfMX7enP4l1v0f0fswWgkwGMYiBEA3WslI1A9t3mTQCw//j3AwDl1vLK+N0dlR10CB2KE6WOHZTOsdI5VhQdlZ10jhXnUCrrcKIbnFR07KAbnIPoqGOHOnSD4mQddazoqOhYh4rWuWGkszrNoeh4W+2L8QAAXAAA4kH5i/hArCQZpQggZkABsg0EWMAAAEIhGkMZCIDQrCFiXSwmxAaCZQBajlGdWU3D4AP4W+YBAIALAASIe8p34CEzDA0ijIZiR2MAAhMCBJRAtjAAMAgSgiUhAIQAOAEhCKAFMGUNlfJ95j9s2SW7ZMvGBQBAAP41XlUqHGKYOJkjU7NCClGIQgGABQgiFGEArAxiAMGRFEGADgsRAovIlLQUfnzzys2vA4BhuQAAAAD+7ObjQzMwBQiyEgKELZUFaAAsQBSAUCikkQQQxQA2K7DBLCFLA41h1ibwbvwVvAM2NjY24AIAQgDgo/iy5l1ClI3ALDKDAEVsBKFDEUIAk5AVi1EsmEWlxY4wTGwMxWK2LKhogBi2+/CteAMeBQCAjQsAhBAA8EvyZ5pfgaEsACZimGwDzEwCDWIQhSwC7AATModlsTPDmlA4EUQopsVmSBVT3r78bXktbgAAAMAFIAiAoijhx+Tb8YtFWIAQqAQFBBggQBGZBswQEEwGRJJDJMrEUjBByBJFxIZ78Z3pH7uwa+yCYQAAXAAAAAAgbsiPxrc074YQQgPDiiWQHGvE0AgG2aEFgBBlUQMbDJkMULMdyUpILQINPSLfXv0QABi7sAu7xi7sgnEBAAAAAAD8n/Gl+EkQC1EgOLNQFhyGshiUoWWhA0BpkwyCbDFIkhBYMBaMGT2E/ydfYf3XzaMGAACAYezCBUAIAIAgAPCreHn8bXwkGIDBkjAgFFAUEBol1ICxAgoBRZNZDJOCcMwM8D72/XgJ/jfswuXC5RqXC7uwAQAAVwAhBAABAaCQD+CvlHvw7eUlAIDB4mCjEAABk8wkR7GAlWQiataxCAvNlmJQqf348v3xygIAAIzBGKAAcQEAgKIIQgSAIA/F98oXyV8qvwrhhCNYKsAAMQhsgcXEIABMYUksE7Aow43mYe0v48/GKwMBAAAAANjY2IUrAAAAAAAoCggQ4e/h1eX346W428WtHTCIygSKQYjKAKIYBrA4bBRDMsBbcc/yHfF+fFIIAQAAAAAAAFcAAAAAAAAAICA+jTfjzeVf4Q90/Hb5TQFk0DAcgSwG0rIYLApZBLF4BDfLm/Aq81p5rQwJAAAAAAAAAIArAAAAAAAAAAAAALwd34nvwhfiq+Kr8HlyXZSFUhCANToUAAHDr+HN5d7yb5p3d7xDCAQAAgAAAAAAAOAKAAAAAAAAAAAAAAAfwWvwmuWm8jn4Ytxp7lheHHcP8Sl8HDfJU2C86fBAPA3/K36kY+Vn8X5cww0IIRQAFQAAAAAAAIArAAAAAAAAAAAAAAAAwKfxC7gHF3kQFzyuPFueI9dxf7wFT8VF3o0P4RY8BCBwQwAIASEAAAAAAAAAwP8Hi4JQTcz2khUAAAAASUVORK5CYII="
+                        alt="cyfonii"
+                      />
+                    </div>
+                    <div class="content">
+                      <h5>Telegram</h5>
+                      <p>@FonAI_ARB</p>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="shape"></div>
+          <div class="container">
+            <div class="row rev">
+              <div class="col-xl-6 col-md-12">
+                <div class="about__right">
+                  <div class="images">
+                    <img
+                      class="img1"
+                      src="images/about-01.ffefac4dbbe10d081bf5.png"
+                      alt="cyfonii"
+                    /><img
+                      class="img2"
+                      src="data:image/png;base64,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"
+                      alt="cyfonii"
+                    /><img
+                      class="img3"
+                      src="images/about-03.4b77f0584a4295c1a9da.png"
+                      alt="cyfonii"
+                    /><img
+                      class="img4"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAA/CAMAAACIAVXGAAADAFBMVEUAAAAIFyM5JSgpICWpubXFg2gYHCRPOzzH4trC7uS90cu8l4gNHiobJzB8SkITHCQpHCGHSj0JERwRJzMQIi4UKjcFERu+gGmDh4UYNEEwJCfBzcdAICAfFhuziny4e2UXGiC8gWyfnpsrWWPFinS2koWKoqUFEhwHEhwkTVaYrKyxn5Wxv7ujt7R/lJcEEhwDEBoFGiUNICsRJDARKTYDFiAACRIKFh8BDRYFHyoMHCYUNEDl/PVPW2QGJDDk9vDS4tze287h0sMHKzUdQ08OLzrc8OwgTFgWLjro//wYPEcAAwzj//7n8+hxp6hVYWre49rSwrQ2dn1hS0orRFDV6eQPQUooPEg3GRnDwrzcqYpSd30sYWsoS1feyrq4vLq1qKFQmqC0npStkoaCf342aXRcZG47VV9cQT9BICDW//7b7eVlmp5ceX/cnHk2Ym0lVmFMT1R5Vk7r/PSas69qWFcHMj3m6t7NyL9xvb3Aqp5YgYfHmICpinwuV2JKVFxpQTvd+vOi7ejk5NfS2s64ycDEvLJ2sbIgcntSVlsRSlQ0OkCLqqlZpKitpJ2qmZC9nY1Fgol8hodndnlRbHI2S1cNOUM/OT0rLjXy//x0ycjHtae1l4udi4SdgnhnbXBeX2NNSE2BSD8tHyOK3dij39a52tSZ29KpzciwrLHixK3ju511j5Jbi5CMjYpbcHgaXmjmlWMaU11cU1UgMj83MTUZJzVFLS98NSru8OTF1s1ftbafnZm7o5aclpPPk3RpZGagdGQ/REtTLy0qGBuS6ePs28rGzcKMxMG3ta3XuaZlg4dxfoFCa3XBjnR9amQ1REyNQzZlNC+r+PKv5dt60tCmxL6iqKb1xZyDmZnZtphIjZVCdXxDY2y1b1jD//3y+fCR0c3Np5QuhYmKbGOzUDehSDYhISfN+O+Kt7VGqqqOm5jwt4iPhn3sp3NhLSnR0cTt07emsKx/d3N0cnHId1miYVLAZ0qzXUT56dif0cs3mZmtfWzehFq0/vnUcks3C8IpAAAAL3RSTlMAf/47/v4g/vr9+1+hf2Hq3X9gv1/fwzsj1cW6pJ9/em/n39+nf1dQ79+/v49/f8esJUUAAA0ASURBVFjDbNRtSBNxHAfwlaMyjKAn6EUQ9KJ6tbvd3W67m7uzbreH25bNRtgmtnJMNs3VJibWamvrAWY1M6qFlWQq5AP0SGqPIBpmReZEVFQKysQI61VF9Lsto6Ivg736f+73+/1//CV/ZcGCjPXLli2b92+WLFmS+l+7YkVGRobk/1mwbM2qDbJ0EBll9FnjVh9NoRRG+0ZHnCNWHU5R8nSWLs9aseCf8xmrEET2+7yKdjgT3eHuwRGHw2V1JhrCAz/ClXFOPmdgkOUr/vz+KjiHwE8MoTE64pUN3d3hgfFwIjHY0HTt2rXXmZ7x7k7HXBlYKisX/AaWil8GgkQJFOes1VPS5snJpqamsGfAWV052dycjEbZkGl8MM5h1JwAWZrxFyCT0zqfL2itTgz2nnzaCwR82lOy2Ri0W5KF0WgkZPCEO60cjmG/CBxbmRayUs2TuC5uqeysrkwkKi1dT3t7J5uAyHzfj+I4XRaLRvOBMI03VFtdDh2dFnA8K1VCCkBplzMWaEhUQo6VnJrt7f369drr168zM91AaGh7ID+fNRkMnoHJhobOuA4XBYgoLBMFymittkwPH7Mcg1hadgWmpnqTzY2NmZnv3/dxDh+t2TZcuN8rEjY2NVQ9AJAlIKwCQG60Okta2lpKLBZRaLsfmwokk82LOyKszRtalLSM6lB6aGtuyGQw8T2syTNQ6aJTwnIQAECNrpHWvpmaEhDAsOw+GZuaCgSk0Z6OSCTyKTIxwSaHu7ZGbHwIiljU4zWY5gg97BIMkS6Lx0s/f+5rTRPTu2KxwOysNBk9enTr/v097ETOBGOuyPV6vbzaYAqxEX6O0OszJOtlBB6Mj9ovvz0DgNjG8KkACIHA7MmTT/Pzox3eiqLzhX6bzcszELXaFLLl8tBIp08PwgrJPBmms4721764bAcBgNipo9BAYKira0haGF3ckbPziSAAwdsAEQW1Qe31qk2esJMDYYkkS865RvvHrjyyV1W1llhisd0X4fux6QdD0mRhYf7FujxSoVQI77rMaob3eivMZgYIs1kNu2Gl9fosSRbtrq0dyy6vHbVX9X15+/bxgU/SoaGhWal056lLLxZeRZQIrItCUNR3RRi/mjHfg0z4zYzJ9APuFITlBWfrs8dOZLvGtpSXPzpT2v79dN3MTNGL8uL57yhUiSAoAYGlN6LvrnRF/Dyj9ouKWW3wdDs5/XLJ6mDwyc3sE2PZeXnZpa2trTUHbwvpEFqdTyVDCCBkBGKsjmsVwvmnDA/3ATdTAX38GHTRqyUbHcEneScO7S3e64pXgfAgTxAUYijayOloeC1QAAjCN1Lt1KHC+Qhv42Ga5iNHmNQwV0rWBYNn824WAzAKo6xqmSFT55VKQkvTWo0MisCgChTVxZ1OHSLUsB08LBYQFTDMhAMEX9BdfPjV3jIQIMPlgnhcoSQQFbRAovBuyOWigBrjIxwqvOxYZLOBoTZXmGESI6slQVF4VewGwV5lr5o+JwoQGSlTwmmKgq0XBQin02qUVCHLMkwoxKgroIiBzgJJQYEo1AfLXHYQ+tpIQZnqQgGGeAVymGS6CJVKo91MKNpY1gYXwjBmsY1BBwgF0MVeR1l/rb20tOWLoCBTglgASREIisIc9Zg8LWiI83WLWNis1DTNJk93XBTOFh92iwIUMXxTUCCk2IIIIIhIUAQhx1QYELhW9Sz3eg/L8gwspkFczAGnKBQszHOXpYW2cwJ8nUwtIjy8KEHJUTmFophKhao0uKalcXrHVhZGCaMw+M1+2EsQtm1buG9sTningEANcJ4kKQi8qxglHoYSVKW2xtjB6yzr5Xko4oLfbxhPSADYfu6XUNtXRKZuIn0L6Xcdl9/Sq1RarQrXcGxjY+/MRxill/FfgPgNnsFfQntaaHkBdykjxUZEANffgegxvR5uQYOjw7bG5smWPTlA+JnF0sKce35PgwQAEIr6x2rb29vbbgpKEhEJJUnKMT3H6TgjTetvaTdraQ3d0QiC5WEOy/PwhBvtw1EzCFDDyyeHHz9rh5w5WC8gMgWchikQchznHN8+fHjj42ijkTZqxnKbFzc3TT3f5A2UhB1azuWcYkPdErfbfbb+7uG3RTU1NXWP666QCkQhAwJuADPeOP7mJ4n1+5NEHAYAnLG2zFe9rvU3sH5YGkkex3XFasBhGI1ANjKoSKJ5UmtGEngdUYviTFmDMsKZ1XnRj2FbTBtIWjqnRVpbC7YckkjyJnnTc/S8/372fL/3/Lj8aJaiOJmcISVfm9ypwejEp5IbN3YbCdjJPXEQAjNjZvX1F2Z7Lpd7+LCcvgkjib8ILEixhqYoY5ZGOYpjGAzbcM2dXo9OXC5Nys52+xaNFWNP7dVHAuGAcNxpn57uUKvNsx3P76ha9/D/D3tEe3dgJM1SVJZlmCwrl4ll8ZTbsx5df6dvx0HwzY/me+JLjwS/fgmPDQy8VufWEmqn4rn1mTRcDzusDqpol5imKQiarhCcjPyuTGm10cjguTQOwm1f93z+Ys3SvOCe0HKP/2S99mmnWWG1Tnnu19eJ9kARoahYo2EJimKzlSxLk1ZXSmuIRtwrX2z4ybPtvu7+/MWmpX7BPYsQBCBe2quC9W1wb92OOiiHBl6gWSJbyVcIliOHkZTnc2TOU1jW6cRym69/ND/RtHQRhJcxiFevYhvfmK/fmbT6VWP10EXbURTFgMBZHUUQlA4nl0EYjMwFC19thAxv/7a46Bs8819o4SN20Fs0K0IgeNbqRdBGKIliDM2IcdbWZWNtOPMHcXjW5x4vZIY5Qmdrbz5xsqdp/+l+gdDibWlp5onY+GxbYtI61XqLHycoHxim0cg5+BAcTsvTiEcbqQqykwTeJT/4tGbfhcOPBAOW3mY+gOgthhNTk/AQO2GqSHYAQsJD0JiYYzkZfcKxGqx9/DheyNzAughc9vHG0QvQnHOQQ+9MIBAAIuYthsPlYesz1XkRJCFpgHugDKahNXLIhGmUalW1NTXSwpP91sDd4Q1H+/p+wN7ZJNgMAhBgtHiLHaGEf8ofNIlgokmgpRkS3pKRaxisoeGtw+CINyGZheM/Dh090Mefd7k699cINh97PXaKj0DzzLg9lDD5Ta2tkAFfD5BEwy5GQ3OcRmLSGxwOJZJ5ojr+t696vtMFwpGq8OBKo0KhaLxyfty5Fir7Tc/03t2wLiT8PUgJwz9nV1pv0KqQUqa0urpQ+Fs9rVR2AlFbFQBoCyXC6o3FnKlsMpmCl37/Xgs1zhwkSRKVSCRoi0ev1eqHCoVMKelCfi6oHIhSqXQlpVJkq2DLe4u6rU3RGL7+4kWH+uEtEy98+DBUSial+vTyXRkgorLKoH2yMjJybmRkJZNErik7AUCkQ0P6a1sF295bzKFQKAG9qXbOFv/VXTcvbYNxAMdDt6yHsdeLMsQ31MPejrvlYP+BEjqwzaENzYj2EmhBkBDRk1CEtFhGBdtq48kWlNCV5mAb+0JhRTLTi+Ihh0LrZVO30RfB4n5P1IOHfe+/D78+aUueori7G4olEnHGy9fc1aur6sra50+7rtS5rObpHfr0XD6pwjgA06l0+lZwWg8i0Ca7tWX31zuL4UaMCUEME/PypA2Qg/20rNI70HFBkM+r5vy0LU2l3ZfvsdFKxZKMHB5GInusnWWJZUXvdAwtzNOiF6L5DbLqFuQwmvd4PH/isvwbxgFwU9QpefkBe12pOHOOH1/WDiN2wk4E53VdqdeVVlfIiwVRFGlaDDX6DRNwuTyeAt4/MQFbiqJq5MIU9qgCBPxLmQYLj1RvSfOZpPVC6am8uF9A4dzKimvBzEXj/Z82lDvNgeAaxLAX29vbTh8y/h5G9oikrge2CIJYKuXAyMMKotbnOA5WrtVIkuS1m3M3AtynSHiMYdibMyT4LDmEbLJJRc+gLxg84FK5BUdybdzcGNeJeMgLR+K2bWg3cgoJKQqElbcgjJqC5dvMzGp2LnAAQpAAYpNlgyVrsdNqNrvFX3GoUAjRPEkKbTltg0zh+xQGvQDBaVk/+jo7O5N1zCkSElhoKxgNGAhIJBKLjBc+Ec/nNxrtPpWCHWoU19g4HkTCs7MKCNnsammJOFovK5Lfj34oiEgu95pNA+YXGcbrzfNQWGj3OSqdSp1yXIP+iJm9BMGHiNXS0bpPkZKIgOyEf7nV7KEV4gwT8iIjH9babRUdLAD8+P1d76UTCBCgdYsiOUBYAgPeMqVWs1M0V4ghIB8OC3i3rQqCqqpCY3wQuyeGQPDloiBkc3XJkckAAfkdeqtXBMEkwABBa3dxQRBwXBXePbjzDjl9uVw0Gs2V67oUmM9kgpADVjCK13dALAzBCl1c03AcnxjAoAfIs6E3Vmu5fKFIgUBgHiXBCsY1CAwSkCFoRs8YG5sYgfH/9ATu9s9ve2U2MjI8PDw5+fSugYFB7GH/APdvxO/jZQqUAAAAAElFTkSuQmCC"
+                      alt="cyfonii"
+                    /><img
+                      class="img5"
+                      src="images/about-05.aa19350bbccea6a1ac62.png"
+                      alt="cyfonii"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12">
+                <div class="block-text">
+                  <h6 class="sub-heading"><span>About FonAI</span></h6>
+                  <h3 class="heading">High Quality NFT Generator</h3>
+                  <p class="mb-17">
+                    We can simply understand that FonAI helps you create “unlike
+                    anyone” designs
+                  </p>
+                  <p class="mb-26">
+                    Just have an idea and describe it to FonAI, you can
+                    completely create a unique NFTs collection using AI
+                    technology even if you aren't a designer or developer. Works
+                    created by AI on on-chain are fully compatible with NFT
+                    marketplaces like Opensea or Nifty
+                  </p>
+                  <a class="action-btn" href="/about"
+                    ><span>More About FonAI</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="speciality">
+          <div class="shape right"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="block-text center">
+                  <h6 class="sub-heading"><span>Our Speciality</span></h6>
+                  <h3 class="heading pd">Complete Solution For Your Project</h3>
+                  <p class="">
+                    Designing and minting NFTs is simpler than ever. Simply
+                    describe what you imagine and let FonAI do the rest
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="speciality-box">
+                  <div class="icon">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt="Cyfonii"
+                    />
+                  </div>
+                  <h5 class="title">Perfect Solution</h5>
+                  <p>AR-AI perfectly displaces the Designer and Developer</p>
+                  <h3 class="number">01</h3>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="speciality-box">
+                  <div class="icon">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAqCAYAAAD1T9h6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQxSURBVHgBvVg5yFRJEP5mmWTZZXdhYXfZXdRAFC880EATQQQRNdNANFTRTFRExEQFE0FMFBMRvK9EUTzBC0/QQAwMFBXECw9ERYPR59e+19rTf1W9fvOeflDUm+ruqq+qq3tmHpCALMv+oGygvKR8NKRTMp4idylbKf1TuLUSyA+gOk3phx+DDDmvB5TJrVbrgTXZTKCowkl0k8+Edd6WIaEoCQiTmGIloQZzbUN1CT+u8hpuUqYyidfSoJXAbqppsTlYl1rteF6Zj9Dmny8wgemSc5EAya+jWig41AJZaKq9tjCJlbGx3Sdali2nmk/5WEIiriTQt3Lxs+QPSEtwHrm9YhLrQ2MrIr+AarUyLpFHCQGJaMqYBD9vMZPYh3gRyY+nOgC5wnHQ+FkilVphzQ+MWDOZxOWvE0j+f6pjlN8gwwqcKfPKKqwVSJob+3Q3kruZHvoEjlINhRwA6EvU20KnGrnUm0Yal4rk/V5hArPbJD+EHwYjP7TaIbVIlbWGVQip+lIMKc441znuFvovIC9B62WrhTJjrnVGYh+AnfS4djHYgd6/1g5I84DyYlgtGceC4fehS+Aa8kPxa0mAphCT+lTYrAsgXu/tt9s8CG/YS9uRf/Nq22Y5SSGstZk114rhxtw385vwe8D99hkE+8YIbWGQVslYZhDUWlWa7/GI5Gd0GZnAv1Q7kLeShDpVr4vQ32PKIibw2A98BZMYQ7UJ5eeg7KbQgmt2axfi+StI/rw3dv2Y48ANJrGHj7NgI+XaKyMTj6Ukui0kHzrqApPYSDXKcNZki1iJhrhD8vO0xV1gAv9QbaD8DT2otgPxuIXU2+4JZSkTeCJNEMEkRlKtVxyWBbTmal9iVgGWkfxNKM5UMIm5VHNCE+zfPZLvuq22i+R3aoNta6VbyCSG8XEEekecXJWduWqR94vs6Fn2C5U71H+hHNoOVV3jbM8oq5jAM2txUjAmMZxqDepDS1Cqvju091CCn5AAOrpFtRX5z+5OoUP5JNi0uaG9o8zbm0LeoY1E0OHR4s/PWHxfnGOs/amTk3YgwGbKU8hVTZWOMeZ8H0QFVD1w/n3p2tBk+NEOaCuIH/b+Elb/OSqg6g6geNHqrjat/62+70TzO4HsqEreIfkMREmcLF7FTEDaf1cNfjcu0ucp9ICeEiiwlzKQ8id0YpItTvIFZR96ROUz0MUo34XFlJ9hE24JNocPlHWs/gv0iMpnIIR7M0blXoq5vo573/pu8GNH6pB3qNNCX0ACZ7gTv/NxYmiGvAPAt+qfd2tRE7V2IMAJ5L3sKx9W2X/uBJ/dbXMcDaCRBFjJ98j/S7/DN/LxzwSf0FvK5mJNbTS1Ay6JV1SHIfd7eB4OFXMbQe0zEILErhfnYRLka/OMe3GABlHrGtXAJEZTub+kA5Bfle6/7FmSv4+G8RkWvmSz5O9r1AAAAABJRU5ErkJggg=="
+                      alt="Cyfonii"
+                    />
+                  </div>
+                  <h5 class="title">High Quality</h5>
+                  <p>Create 4k quality images in any material and art style</p>
+                  <h3 class="number">02</h3>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="speciality-box">
+                  <div class="icon">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAqCAYAAAD1T9h6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOISURBVHgB7Vm/a1RBEP5euCaIRBH8hQhqETQi+AstAgoipIwKdtoIFtaChWAv+E/ELmBtIyoBkUQIiJgIFlExoAEjWGh1d89vc9mwmczuzl5yqe6DYe/tzs7OzM7O7HsHFKKu60ekBVJLoWak30KzpNsoRFXCzAVesLmE3mKqqqqrVuYBKyOVv8VmlNQktQQ1RbsZGuVaD2GEeQco9C2bU9gefOMujFgYSwz445pgXm2cL/lyMlb6iCEY0IAdLW2h/LQ1Pit/ETZjQC+x5Yb20UcE2Vhj9rnI5gRpJ7qHlokqRZda9E0zG80ggagBVPwQm8ekC8Gi4UJVQpmwv04oqaVXucY86R4NWQTKDHjF5qBYtMLGtKgpVCd4tbnyN8TzPA24BgWNiPLjbPajkzo1gTGFIHglYoYD8WLnMEydrtCIl7AYQJxD514TLip/a4pZoFVe2a8ZeZlkNqCNdOEqVTgWZileOa+t8CcNaAcLpbxmuevUCQW1pACFvy4x4DVpEflM0y26kfcZffSx9ViLQ+ZZl/evk8ZIOwzzYoVHjlvlpMb9mflLekN6yprw0zM45fexeYJO8bIItIyX1IzclUNiiXSfRix5AybY7EUeuXuPVMqP9QIfaMCDBpU/yoc90AtXicdjkMZtRTV3GHG6uzrgPN+E7tlSod3kd0uhHMD6s+D7jzgDBrG+THdbtCZJc0bek6SbwXPOUbFbQbux2tkSwuS9I3d/ecd4nIQdH7n9h9meR3mYrrtehAaUhkuIbr5YxC6MJeeq1nYgxpzCGXrU1ZBPsOE46TTyhudeRVdCKPRE7kXFh5cmdHyVUgqEfbldt7y2rt1GrSFg2Y3YwrJyQ/THxlJ9bUsIWZT0i6eUScnxqbIt+kK5agF1Brj7RVMMxDxoTa8pz2kZpQqUB2zV3j3/cgZ8x8aXd8kIxEMhFRra25bVuzkDHP41mL+XmUHcLgwmFi4RmuPJxXXYF0LqtOy+FflD7L4BjSWExrwZCo4tps3ReIC840L+adfhDZhC5++jQdjiMObV1DiQPlu5MxLiN2kmFOiu1MfY3EV+u7V+fwjD5xKUhK3DBMNnbsNCNOIsmxsRRTQPST4trFLxrnlb/pbrPKPys4gId0bsZnOHNJRQJrXNqZAA4srGzoTHD9JzKv9FClJBQ9xdZZi0i3TAoEgpUor7cffH4gLpPRX/qgn5D7Mx7gAcbi5IAAAAAElFTkSuQmCC"
+                      alt="Cyfonii"
+                    />
+                  </div>
+                  <h5 class="title">On-chain Connect</h5>
+                  <p>Mint NFT from the newly created image with just one tap</p>
+                  <h3 class="number">03</h3>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="speciality-box">
+                  <div class="icon">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAwCAYAAABnjuimAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARdSURBVHgBzVk5iBRBFH09GMiKJ3jfR2SiopGYKIJo4IIHpkaCIKiBmGiiiFciRiYiiolnoCiKiYLgASYegSKu624gLosL7qHLzLSvprvW6ppf1dW9lx8ev6fq1/+vq35VddVEGCGJ43ga1RJiNdGjEEXRU/wvQoKriLtEN1ElaimqadllYjHGU0jgODFI/BG0XXYcYy1qmInHxECK/hQDhh4Qft8gpqKERCgoDLSI6hGxKLSJFecbsZX5244CUiliTJIbqJ4T84lainqKmgN163kB8SD1NfJE6Xg/1T1ishW8mkIiXbfKtd085Ys+jwaGDxt6OjxFtc+wjwU/seAvNupg1eu6S0yDYxgOURJcSHWRWG8FtAnawYuIavOB2EvCHShKNCV5B0lORQIRu7dsn1Jv+p47iR0k2wlBKg6Su6keE3ORzUUzJ+0JVBdspYlVt9rrZ5W3asnbInGKBJKHqQ7pn2jOywhyzza5gpyfsSO+WX6BPXsBDkNF8hzVLriDjqVcIdmT+sdQcJI8S7XTMs7rrTw7XWfGkkYJkHv3Lsk2lrAJKckDVK1IcsZHCI5gUnqYvyUyvhi6rJXcPpDstYgPape5iiSZQ8Q184ukhrRauGx+EZtVj64jZiPbm64kdwVQ5XXkE3AtUT7/LUSrIro9DZJHzEdSt5NeMC9FXP7NkdqoiK5A0pvSNuciUCRvzXqbQF5MrVcooi1onkR5oodaP5cV84V8I9YyIQ0YkitmechkyBNp43DZNJanao4jiaDvi8hu6yMqtTPLMkRrHiPklOXVha63yPOrhz5UQgiNipg9Kokvf3R9nFNuv0RIG5GobzJFOXVw2PlyGvCngOhH6tEywzjuQx9KwFxXUcBf8Atqoq5hDCWgbduIL8QkYhaxVLDJ8yfmqtSjrrx0SR9xX4GfY31mBb/MFNlNxB74J1GmGYR1Wn3m3UF56SLOkOBXn1FK+AQxE80kg3Y4RfSW9udw4JrR/cQRkuxCgDCOInkeSVpI5FRZxVHXqDBPjPbJ0L7pMG87roSSVJLa3hR8a8TI3rhkTrAVK7hpWLVewqz7wcDPUFDY5iFVL5qP3NLdldk59Yqjwj6D2+fw9ygvryHfT3kv3OxZH/oZ147yotquR0Ext1BpLXWV9aK8qCWsBvcno7gJjNQWWkRiZDcZO674CWgTDSVZ5NMQAqG6UOaNq4iqZWOGw2EEOV+DFmmH6MniEztmp5r1HyHPPN+SMRyigPtW2lwazXgdqkdfIbmEsCXkjFSWZLWAHxX3bYWL8Gc+fELz4i69qX5ehvKyHPJoue5Uu8nxXeOtuA+re6eDglPfnv8EyZX2b4TLhhSNsPi3t/u+rE6T6M+h7ifZtUjuRl0nUCDsFDqc5c1ue5sk3zQFJtmVVNuIaVbjJlsM/8ji+tpXepC4TpJtcARXZKcj+Yd4DTEFI9NToaLS6AXxkiQzKeUNTNJzqCYi28OjIYrUd5LrcRn8BWbhvl3lROOoAAAAAElFTkSuQmCC"
+                      alt="Cyfonii"
+                    />
+                  </div>
+                  <h5 class="title">Big Community</h5>
+                  <p>Powerful public community of ideas and helpful tooltips</p>
+                  <h3 class="number">04</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div name="portfolio">
+          <section class="portfolio">
+            <div class="shape"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="block-text center">
+                    <h6 class="sub-heading"><span>Join Minting NFT</span></h6>
+                    <h3 class="heading pd">Become An NFT Developer Now</h3>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                  <div class="portfolio__left">
+                    <div class="portfolio-box">
+                      <div class="step">Step 1</div>
+                      <div class="icon">
+                        <img
+                          src="fonts/icon-1.f92d6716453648917140d0982c1235c8.svg"
+                          alt="Cyfonii"
+                        />
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Connect your wallet</h5>
+                        <p>
+                          Connect your wallet to Arbitrum chain, adding the
+                          chain's RPC endpoint if required
+                        </p>
+                      </div>
+                    </div>
+                    <div class="portfolio-box">
+                      <div class="step">Step 2</div>
+                      <div class="icon">
+                        <img
+                          src="fonts/icon-3.3362ae6a9dd4e1d14fd1400a55131ba0.svg"
+                          alt="Cyfonii"
+                        />
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Presenting Ideas To AI</h5>
+                        <p>
+                          Describe in detail the idea and requirements for the
+                          works. FonAI will rely on these data to create the
+                          perfect picture
+                        </p>
+                      </div>
+                    </div>
+                    <div class="portfolio-box">
+                      <div class="step">Step 3</div>
+                      <div class="icon">
+                        <img
+                          src="fonts/icon-4.d14354eb7e60d2f3c8ea5cd46c8c5bdc.svg"
+                          alt="Cyfonii"
+                        />
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Mint Your NFT</h5>
+                        <p>
+                          Pick a favorite artwork and ask the FonAI to process
+                          it on-chain to mint it into NFT
+                        </p>
+                      </div>
+                    </div>
+                    <div class="portfolio-box">
+                      <div class="step">Step 4</div>
+                      <div class="icon">
+                        <img
+                          src="fonts/icon-2.0f1a333637c772f2ac2dc19dfe37278e.svg"
+                          alt="Cyfonii"
+                        />
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Sell your NFT</h5>
+                        <p>
+                          Sell your NFTs in the FonAI marketplace or on the NFT
+                          marketplaces such as OpenSea, Nifty,…
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                  <div class="portfolio__right">
+                    <div
+                      class="image aos-init aos-animate"
+                      data-aos="fade-left"
+                      data-aos-duration="2000"
+                    >
+                      <img
+                        src="images/portfolio.448deaf531060bde56dc.png"
+                        alt="cyfonii"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="project">
+          <div class="shape right"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="block-text center">
+                  <h6 class="sub-heading"><span>Our Speciality</span></h6>
+                  <h3 class="heading">EXPLORE OUR STYLE</h3>
+                </div>
+                <div
+                  class="swiper swiper-initialized swiper-horizontal swiper-pointer-events project-swiper"
+                >
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div
+                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+                  >
+                    <span
+                      class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                    ></span
+                    ><span class="swiper-pagination-bullet"></span
+                    ><span class="swiper-pagination-bullet"></span
+                    ><span class="swiper-pagination-bullet"></span
+                    ><span class="swiper-pagination-bullet"></span
+                    ><span class="swiper-pagination-bullet"></span
+                    ><span class="swiper-pagination-bullet"></span
+                    ><span class="swiper-pagination-bullet"></span>
+                  </div>
+                  <div
+                    class="swiper-wrapper"
+                    style="
+                      transition-duration: 0ms;
+                      transform: translate3d(-800px, 0px, 0px);
+                    "
+                  >
+                    <div
+                      class="swiper-slide swiper-slide-duplicate"
+                      data-swiper-slide-index="6"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-07.d4203e6fa344b86ccb75.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts">Retro Futurism</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                      data-swiper-slide-index="7"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-08.a1a6fc0cf320996448fc.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts"
+                              >Abstract Artwork</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide-active"
+                      data-swiper-slide-index="0"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-01.38c98d63d93692fbe3f5.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts"
+                              >Surrealist Portrait Art</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide-next"
+                      data-swiper-slide-index="1"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-02.b5d319750690ec212093.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts"
+                              >3D Objects Design</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide"
+                      data-swiper-slide-index="2"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-03.5522da03d88d73b06b1b.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts">Digital Artwork</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide"
+                      data-swiper-slide-index="3"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-04.aa936c138980ac3f3d45.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts">Vector Design</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide"
+                      data-swiper-slide-index="4"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-05.c7d5f36c645768bb62bc.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts"
+                              >Fantastical Artwork</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide"
+                      data-swiper-slide-index="5"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-06.d189a2c866d2bfd0e32d.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts">Virtual World</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide"
+                      data-swiper-slide-index="6"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-07.d4203e6fa344b86ccb75.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts">Retro Futurism</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide-duplicate-prev"
+                      data-swiper-slide-index="7"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-08.a1a6fc0cf320996448fc.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts"
+                              >Abstract Artwork</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                      data-swiper-slide-index="0"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-01.38c98d63d93692fbe3f5.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts"
+                              >Surrealist Portrait Art</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                      data-swiper-slide-index="1"
+                      style="width: 370px; margin-right: 30px"
+                    >
+                      <div class="swiper-slide">
+                        <div class="project-box">
+                          <div class="image">
+                            <a href="/nfts"
+                              ><img
+                                src="images/project-02.b5d319750690ec212093.png"
+                                alt="Cyfonii"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <a class="h5 title" href="/nfts"
+                              >3D Objects Design</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div name="roadmap">
+          <section class="roadmap">
+            <img
+              src="images/line.3a6a07c6db5f75eeb158.png"
+              alt=""
+              class="img-line"
+            />
+            <div class="shape"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="block-text center">
+                    <h6 class="sub-heading"><span>Road Map</span></h6>
+                    <h3 class="heading pd">The Journey Of FonAI</h3>
+                  </div>
+                  <div
+                    class="roadmap__main aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                  >
+                    <div class="roadmap-box">
+                      <div class="time">Phase 1</div>
+                      <div class="content">
+                        <h5 class="title">Idea And First Deployment</h5>
+                        <p class="text">Concept built</p>
+                        <p class="text">Initial marketing</p>
+                        <p class="text">Website and contract deployment</p>
+                      </div>
+                    </div>
+                    <div class="roadmap-box right">
+                      <div class="time">Phase 2</div>
+                      <div class="content">
+                        <h5 class="title">World Connection</h5>
+                        <p class="text">Digital marketing strategy plan</p>
+                        <p class="text">Portfolio tracker</p>
+                        <p class="text">Partnerships with Influencers</p>
+                      </div>
+                    </div>
+                    <div class="roadmap-box">
+                      <div class="time">Phase 3</div>
+                      <div class="content">
+                        <h5 class="title">Build And Token Launching</h5>
+                        <p class="text">NFT platform development</p>
+                        <p class="text">Token launch</p>
+                        <p class="text">CoinMarketCap listing</p>
+                        <p class="text">Coingecko listing</p>
+                        <p class="text">Social media ads campaign</p>
+                      </div>
+                    </div>
+                    <div class="roadmap-box right">
+                      <div class="time">Phase 4</div>
+                      <div class="content">
+                        <h5 class="title">Initial Release and Testing</h5>
+                        <p class="text">Release the beta version of Dapp</p>
+                        <p class="text">Telegram bot completion</p>
+                        <p class="text">Website 2.0 release</p>
+                        <p class="text">
+                          Twitter and discord bot testing phase
+                        </p>
+                      </div>
+                    </div>
+                    <div class="roadmap-box">
+                      <div class="time">Phase 5</div>
+                      <div class="content">
+                        <h5 class="title">The Final And More</h5>
+                        <p class="text">Marketplace - Demo</p>
+                        <p class="text">Functional testing in Dapp</p>
+                        <p class="text">Influencers and Artists cooperation</p>
+                        <p class="text">Launch of the Dapp</p>
+                        <p class="text">Roadmap Update</p>
+                      </div>
+                    </div>
+                    <div class="icon"></div>
+                    <div class="icon bottom"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div name="contact">
+          <section class="create">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="create__main">
+                    <div class="content">
+                      <h4 class="heading">Join FonAI Community</h4>
+                      <p>Get udpated with news, tips &amp; tricks</p>
+                      <a class="action-btn" href="/contact"
+                        ><span>Join Now</span></a
+                      >
+                    </div>
+                    <img
+                      src="images/create.3568973ba97e882733e5.png"
+                      alt="Cyfonii"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="footer">
+          <div class="shape"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="footer__bottom">
+                  <a class="logo"
+                    ><img
+                      src="images/logo.29032d7af23866f9612e.png"
+                      alt="Cyfonii"
+                  /></a>
+                  <div class="center mb--30">
+                    <ul class="list">
+                      <li><a>Home</a></li>
+                      <li><a>How It Work?</a></li>
+                      <li><a>Roadmap</a></li>
+                      <li>
+                        <a
+                          href="https://fonai-app.gitbook.io/whitepaper/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Docs</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                          >Marketplace</a
+                        >
+                      </li>
+                    </ul>
+                    <p>Copyright © FonAI.app 2023 All rights reserved</p>
+                  </div>
+                  <ul class="list-social">
+                    <li>
+                      <a
+                        href="https://t.me/FonAI_ARB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 448 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/FonAI_ARB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><svg
+                          width="15"
+                          height="12"
+                          viewBox="0 0 15 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5 1.42062C13.9794 1.66154 13.4246 1.82123 12.8462 1.89877C13.4412 1.524 13.8954 0.935077 14.1089 0.225231C13.5541 0.574154 12.9416 0.820615 12.2889 0.958154C11.7621 0.366462 11.0114 0 10.1924 0C8.60337 0 7.32412 1.36062 7.32412 3.02862C7.32412 3.26862 7.34338 3.49938 7.39062 3.71908C5.0045 3.59631 2.89313 2.38985 1.47475 0.552C1.22712 1.00523 1.08188 1.524 1.08188 2.08246C1.08188 3.13108 1.59375 4.06062 2.35675 4.59877C1.89562 4.58954 1.44325 4.44831 1.06 4.22585C1.06 4.23508 1.06 4.24708 1.06 4.25908C1.06 5.73046 2.05487 6.95262 3.3595 7.23415C3.12587 7.30154 2.87125 7.33385 2.607 7.33385C2.42325 7.33385 2.23775 7.32277 2.06362 7.28215C2.4355 8.48123 3.49075 9.36277 4.7455 9.39138C3.769 10.1972 2.52912 10.6828 1.18688 10.6828C0.9515 10.6828 0.72575 10.6717 0.5 10.6412C1.77137 11.5062 3.27813 12 4.903 12C10.1845 12 13.072 7.38462 13.072 3.384C13.072 3.25015 13.0676 3.12092 13.0615 2.99262C13.6311 2.56615 14.1097 2.03354 14.5 1.42062Z"
+                            fill="white"
+                          ></path></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://discord.gg/SmTVCyHRsX"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 640 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a id="scroll-top"><span class="icon-arrow-top"></span></a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
